@@ -1,0 +1,100 @@
+/*******************************************PÁGINA CONTACTO************************************/
+/*************CONTACTO**************/
+
+.main-contacto {
+    height: 800px;
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #929292;
+    border-radius: 10px;
+  }
+  
+  .div-contacto {
+    background-image: url(/Imagenes/masterchef.webp);
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    padding-top: 5%;
+  }
+  
+  .contacto-txt {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ececec;
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+  
+  .txt-span {
+    color: #929292;
+    text-transform: capitalize;
+    padding: 5%;
+  }
+  
+  /**************FORMULARIO*************/
+  
+  .div-form {
+    background-color: #ececec;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    padding: 50px;
+  }
+  
+  .form-t {
+    margin: 15px;
+    color: #1c1c1c;
+    font-family: "Futura Bold Italic";
+  }
+  
+  form label {
+    color: #000;
+  }
+  
+  input {
+    width: 90%;
+    margin: 10px;
+    border-radius: 3px;
+  }
+  
+  textarea {
+    width: 90%;
+    border-radius: 3px;
+  }
+  
+  .btn-formulario {
+    background-color: #f7ff03;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn-submit {
+    background-color: #1d8e04;
+    color: #ececec;
+  }
+  
+  .btn-reset {
+    background-color: #a01111;
+    color: #ececec;
+  }
+  
+  iframe {
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 40px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #3aaf20;
+  }
+  
+  .btn-reset:hover {
+    background-color: #d41e1e;
+  }
+  

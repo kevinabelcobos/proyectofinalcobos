@@ -1,0 +1,133 @@
+/*********************************************VISTA TABLET**************************************/
+@media (max-width: 1024px) {
+    /***************PÁGINA INICIO**************/
+    /***HEADER***/
+  
+    .navbar {
+      padding: 0;
+      flex-direction: column;
+      height: 15vh;
+    }
+  
+    .navbar-nav {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      background-color: #1c1c1c;
+      width: 150px;
+    }
+  
+    .navbar-toggler {
+      background-color: #f57208;
+    }
+  
+    .logo {
+      width: 100px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+  
+    /***MAIN***/
+  
+    .main-index {
+      height: auto;
+    }
+  
+    .primer-seccion {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      height: auto;
+      margin: 40px auto;
+      padding: 0;
+    }
+  
+    .s-tarjeta-dos {
+      display: none;
+    }
+  
+    /***********PÁGINA SERVICIOS*********/
+  
+    .servicios-div {
+      font-size: 1.2rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .servicios-img {
+      width: 50vw;
+    }
+  
+    .p-cambio {
+      order: 2;
+    }
+  }
+  
+  /*********VISTA MOBILE********/
+  @media (max-width: 767px) {
+    /***********PÁGINA INICIO***********/
+  
+    .navbar-nav {
+      width: 100%;
+    }
+  
+    /***********MAIN***********/
+  
+    .main-index {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+  
+    .primer-seccion {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 0.75rem;
+      width: 100vw;
+      height: auto;
+    }
+  
+    .s-tarjeta-dos {
+      display: inherit;
+    }
+  
+    .t-cara, .t-frente, .t-reverso {
+      width: 100%;
+    }
+  
+    /***********PÁGINA SERVICIOS*********/
+  
+    .servicios-div {
+      font-size: 1.2rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .servicios-img {
+      width: 50vw;
+    }
+  
+    .img-menudelacasa {
+      order: 2;
+    }
+  
+    /***********PÁGINA CONTACTO*********/
+  
+    .main-contacto {
+      flex-wrap: wrap;
+      height: 100%;
+    }
+  
+    .div-contacto {
+      font-size: 0.7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  }

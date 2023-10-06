@@ -1,0 +1,103 @@
+/********************************************MAIN**********************************************/
+
+.main-index {
+    background-image: url(/Imagenes/IMAGEN\ FONDO\ -QUE\ GAUCHO.avif);
+    grid-area: main;
+    height: 40vh;
+    margin: 0;
+    display: grid;
+    border-bottom: 1px solid #929292;
+    box-shadow: 0px 2px 60px rgba(255, 255, 255, 0.533);
+  }
+  
+  /************SECCION UNO**********/
+  
+  .primer-seccion {
+    grid-area: seccion1;
+    margin: 60px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #929292;
+  
+    div {
+      width: 50%;
+      margin: 20px;
+      cursor: pointer;
+    }
+  }
+  
+  .s-tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
+  
+    .t-cara {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      overflow: hidden;
+      transition: 0.5s;
+    }
+  
+    .t-frente {
+      transform: perspective(400px) rotateY(0deg);
+  
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+  
+      h3 {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        color: #ececec;
+        background: rgba(22, 22, 22, 0.874);
+      }
+    }
+  
+    .t-reverso {
+      transform: perspective(400px) rotateY(180deg);
+      background-color: rgba(22, 22, 22, 0.874);
+      padding: 15px;
+      color: #ececec;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      border: 1px solid #929292;
+  
+      h3 {
+        font-size: 1.8rem;
+        margin-top: 1.2rem;
+        letter-spacing: 2px;
+      }
+  
+      p {
+        letter-spacing: 1px;
+        margin: 15% 10%;
+      }
+    }
+  
+    &:hover {
+      .t-frente {
+        transform: perspective(600px) rotateY(180deg);
+      }
+  
+      .t-reverso {
+        transform: perspective(600px) rotateY(360deg);
+      }
+    }
+  }
+  

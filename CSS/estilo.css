@@ -1,0 +1,469 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* ******************************************HEADER***************************************** */
+.navbar {
+  background-color: rgb(203, 57, 57);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  grid-area: header;
+  z-index: 1;
+  border-bottom: 2px solid #929292;
+}
+
+.miLogo {
+  width: 15%;
+  cursor: pointer;
+}
+
+.navbar-centrado {
+  margin-left: 35%;
+}
+
+.navbar-nav a {
+  color: #d1d9f0;
+}
+.navbar-nav a:hover {
+  color: rgba(6, 31, 253, 0.8823529412);
+}
+
+main, h4, p {
+  color: #023bf5;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-div h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 50px;
+}
+
+/********************************************MAIN**********************************************/
+.main-index {
+  background-image: url(/Imagenes/IMAGEN\ FONDO\ -QUE\ GAUCHO.avif);
+  grid-area: main;
+  height: 40vh;
+  margin: 0;
+  display: grid;
+  border-bottom: 1px solid #929292;
+  box-shadow: 0px 2px 60px rgba(255, 255, 255, 0.533);
+}
+
+/************SECCION UNO**********/
+.primer-seccion {
+  grid-area: seccion1;
+  margin: 60px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #929292;
+}
+.primer-seccion div {
+  width: 50%;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.s-tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.s-tarjeta .t-cara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.s-tarjeta .t-frente {
+  transform: perspective(400px) rotateY(0deg);
+}
+.s-tarjeta .t-frente img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.s-tarjeta .t-frente h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #ececec;
+  background: rgba(22, 22, 22, 0.874);
+}
+.s-tarjeta .t-reverso {
+  transform: perspective(400px) rotateY(180deg);
+  background-color: rgba(22, 22, 22, 0.874);
+  padding: 15px;
+  color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #929292;
+}
+.s-tarjeta .t-reverso h3 {
+  font-size: 1.8rem;
+  margin-top: 1.2rem;
+  letter-spacing: 2px;
+}
+.s-tarjeta .t-reverso p {
+  letter-spacing: 1px;
+  margin: 15% 10%;
+}
+.s-tarjeta:hover .t-frente {
+  transform: perspective(600px) rotateY(180deg);
+}
+.s-tarjeta:hover .t-reverso {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/********************************************FOOTER********************************************/
+footer {
+  background-color: rgb(203, 57, 57);
+  grid-area: footer;
+  height: 180px;
+  width: 100%;
+}
+
+.footer-redes {
+  background-color: #ff4a03;
+  border-bottom: 1px solid #f34e01;
+  margin-bottom: 20px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+
+.footer-img {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 10px 0 0;
+}
+.footer-img:hover {
+  background-color: #ececec;
+}
+
+.footer-texto {
+  color: #ececec;
+}
+.footer-texto h4 {
+  font-family: "Futura Bold Italic";
+  text-transform: uppercase;
+  color: #0206f3;
+  text-decoration: none;
+}
+.footer-texto h4:hover {
+  color: #ececec;
+}
+.footer-texto a {
+  text-decoration: none;
+}
+.footer-texto p {
+  color: #ececec;
+  text-transform: capitalize;
+}
+
+/*******************************************PÁGINA NOSOTROS************************************/
+.main-nosotros {
+  border: 3px solid #929292;
+  color: #1c1c1c;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Futura Bold Italic";
+  margin: 80px 15px;
+  padding: 20px;
+}
+
+.div-nosotros h1 {
+  font-size: 40px;
+  background-color: #ec4402;
+}
+
+/*******************************************PÁGINA SERVICIOS***********************************/
+/*******************MAIN*******************/
+.section-servicios {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.servicios-div {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #929292;
+  margin: 40px 10%;
+  /* height: 50vh; */
+}
+
+.nuestromenu-img {
+  width: 40%;
+}
+
+.servicios-p {
+  background-color: rgba(22, 22, 22, 0.874);
+  border: 2px solid #fc5204;
+  color: #ececec;
+  margin: 1%;
+  padding: 10%;
+}
+
+.img-cambio2 {
+  order: 2;
+}
+
+/*******************************************PÁGINA NUESTRO MENU***********************************/
+/*******************MAIN*******************/
+.section-nuestromenu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.nuestromenu {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #929292;
+  margin: 40px 10%;
+  /* height: 50vh; */
+}
+
+.servicios-img {
+  width: 40%;
+}
+
+.nuestromenu-p {
+  background-color: rgba(22, 22, 22, 0.874);
+  border: 2px solid #fc5203;
+  color: #e75e02;
+  margin: 1%;
+  padding: 10%;
+}
+
+.img-menudelacasa {
+  order: 2;
+}
+
+/*******************************************PÁGINA CONTACTO************************************/
+/*************CONTACTO**************/
+.main-contacto {
+  height: 800px;
+  margin: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #929292;
+  border-radius: 10px;
+}
+
+.div-contacto {
+  background-image: url(/Imagenes/masterchef.webp);
+  background-size: cover;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 5%;
+}
+
+.contacto-txt {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ececec;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.txt-span {
+  color: #929292;
+  text-transform: capitalize;
+  padding: 5%;
+}
+
+/**************FORMULARIO*************/
+.div-form {
+  background-color: #ececec;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.form-t {
+  margin: 15px;
+  color: #1c1c1c;
+  font-family: "Futura Bold Italic";
+}
+
+form label {
+  color: #000;
+}
+
+input {
+  width: 90%;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+textarea {
+  width: 90%;
+  border-radius: 3px;
+}
+
+.btn-formulario {
+  background-color: #f7ff03;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  background-color: #1d8e04;
+  color: #ececec;
+}
+
+.btn-reset {
+  background-color: #a01111;
+  color: #ececec;
+}
+
+iframe {
+  margin-top: 50px;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 40px;
+}
+
+.btn-submit:hover {
+  background-color: #3aaf20;
+}
+
+.btn-reset:hover {
+  background-color: #d41e1e;
+}
+
+/*********************************************VISTA TABLET**************************************/
+@media (max-width: 1024px) {
+  /***************PÁGINA INICIO**************/
+  /***HEADER***/
+  .navbar {
+    padding: 0;
+    flex-direction: column;
+    height: 15vh;
+  }
+  .navbar-nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #1c1c1c;
+    width: 150px;
+  }
+  .navbar-toggler {
+    background-color: #f57208;
+  }
+  .logo {
+    width: 100px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  /***MAIN***/
+  .main-index {
+    height: auto;
+  }
+  .primer-seccion {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin: 40px auto;
+    padding: 0;
+  }
+  .s-tarjeta-dos {
+    display: none;
+  }
+  /***********PÁGINA SERVICIOS*********/
+  .servicios-div {
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .servicios-img {
+    width: 50vw;
+  }
+  .p-cambio {
+    order: 2;
+  }
+}
+/*********VISTA MOBILE********/
+@media (max-width: 767px) {
+  /***********PÁGINA INICIO***********/
+  .navbar-nav {
+    width: 100%;
+  }
+  /***********MAIN***********/
+  .main-index {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .primer-seccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.75rem;
+    width: 100vw;
+    height: auto;
+  }
+  .s-tarjeta-dos {
+    display: inherit;
+  }
+  .t-cara, .t-frente, .t-reverso {
+    width: 100%;
+  }
+  /***********PÁGINA SERVICIOS*********/
+  .servicios-div {
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .servicios-img {
+    width: 50vw;
+  }
+  .img-menudelacasa {
+    order: 2;
+  }
+  /***********PÁGINA CONTACTO*********/
+  .main-contacto {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .div-contacto {
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

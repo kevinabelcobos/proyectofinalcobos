@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a El Gaucho, Bienvenido a casa">
+    <title>El Gaucho</title>
+    
+    <!-- BS CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="/CSS/estilo.css">
+
+</head>
+
+<body>
+
+
+    <header class="encabezado">
+
+        <nav class="navbar navbar-expand-lg bg-navbar">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand" href="/index.html">
+                    <img class="miLogo" src="/Imagenes/Gaucho.png" alt="logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML/nuestromenu.html">Nuestro Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HTML/ubicacion.html">Ubicacion</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+
+<!--CONTACTO-->
+
+<main class="main-contacto">
+
+    <div class="div-contacto">
+        <p class="contacto-txt">
+            <!-- <img src="/Imagenes/CORREO ELECTRONICO.png" alt="CORREO" /> -->
+            DIRECCION
+        </p>
+        <span class="contacto-txt txt-span"
+        >Gral. José de San Martín 2785 - Florida -Provincia de Buenos Aires</span>
+
+        <p class="contacto-txt">
+            <!-- <img src="/Imagenes/telcontacto.webp" alt="Telefono"/> -->
+            TELEFONO
+        </p>
+        <span class="contacto-txt txt-span">4796-3233</span>
+
+    </div>
+
+
+
+        <!--FORMULARIO-->
+
+    <div class="div-form">  
+
+        <h2 class="form-t">DEJANOS TU CONSULTA</h2>
+        <form action="">
+            <label class="label-border" for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre"/>
+
+            <label class="label-border" for="apellido" Apellido></label>
+            <input type="text" id="apellido" placeholder="Apellido"/>
+
+            <label class="label-border" for="mail">E-Mail</label>
+            <input type="email" id="mail" placeholder="E-Mail"/>
+
+            <label class="label-border" for="numero">Teléfono</label>
+            <input type="number" id="numero" placeholder="Teléfono"/>
+            
+            <label for="consulta">Consulta</label>
+            <textarea name=""id="consulta"cols="20"rows="10"placeholder="Deje su consulta"></textarea>
+            
+            <input class="btn-formulario btn-submit" type="submit"/>
+            <input class="btn-formulario btn-reset" type="reset"/>
+        </form>
+    </div>
+</main>
+
+
+        <!--IFRAME-->
+
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13147.495624610488!2d-58.4994478!3d-34.5314225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6d2cd444d53%3A0xb1c9bd90627d9f95!2sQue%20gaucho!5e0!3m2!1ses-419!2sar!4v1696462460739!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- FOOTER -->
+
+<footer>
+    <div class="footer-redes">
+
+        <a href="https://www.instagram.com" target="_blank">
+            <img class="footer-img" src="/Imagenes/instagram-icon-logo-free-png.webp" alt="Logo de Instagram">
+        </a>
+
+        <a href='/HTML/ubicacion.html' target='_blank'>
+            <img class="footer-img" src="/Imagenes/CORREO ELECTRONICO.png" alt="Logo de Correo Electronico">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img class="footer-img" src="/Imagenes/facebook.jpeg" alt="Logo de Facebook">
+        </a>
+        
+    </div>
+    
+    <div class="footer-texto">
+        <a href='/'>
+            <h4>¡VISITANOS!</h4>
+        </a>
+        <p>Copyright 2023© QUE GAUCHO</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
